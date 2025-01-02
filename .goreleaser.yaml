@@ -1,0 +1,91 @@
+# This is an example .goreleaser.yml file with some sensible defaults.
+# Make sure to check the documentation at https://goreleaser.com
+
+# The lines below are called `modelines`. See `:help modeline`
+# Feel free to remove those if you don't want/need to use them.
+# yaml-language-server: $schema=https://goreleaser.com/static/schema.json
+# vim: set ts=2 sw=2 tw=0 fo=cnqoj
+
+version: 2
+
+project_name: pivirt-agent
+
+env:
+  - GPG_PASSPHRASE=asd123
+
+before:
+  hooks:
+    # You may remove this if you don't use go modules.
+    - go mod tidy
+    # you may remove this if you don't need go generate
+    - go generate ./...
+
+builds:
+  - env:
+      - CGO_ENABLED=0
+    goos:
+      - linux
+
+archives:
+  - format: tar.gz
+    # this name template makes the OS and Arch compatible with the results of `uname`.
+    name_template: >-
+      {{ .ProjectName }}_
+      {{- title .Os }}_
+      {{- if eq .Arch "amd64" }}x86_64
+      {{- else if eq .Arch "386" }}i386
+      {{- else }}{{ .Arch }}{{ end }}
+      {{- if .Arm }}v{{ .Arm }}{{ end }}
+signs:
+  - artifacts: package  # Sign all .rpm artifacts
+    id: rpms
+    cmd: gpg
+    args: ["-u", "3ACD8FE8665185C4", "--output", "${signature}", "--detach-sign", "${artifact}"]
+#    args:
+#      - --batch
+#      - --yes
+#      - --pinentry-mode
+#      - loopback
+#      - --passphrase
+#      - "{{ .Env.GPG_PASSPHRASE }}"
+#      - --detach-sign
+#      - --armor
+#      - --output={{ .Artifact.Path }}.asc
+#      - "{{ .Artifact.Path }}"
+nfpms:
+  - formats:
+      - deb
+      - rpm
+    vendor: Progressive Innovation LAB
+    maintainer: Paal Gyula <gyula@pilab.hu>
+    description: Cloud Agent and RPC server for PiVirt virtualization platform.
+    license: All Rights Reserved to the PiVirt creators.
+    bindir: /usr/bin
+    scripts:
+      postinstall: packaging/nfpm/pivirt-agent.postinst
+      preremove: packaging/nfpm/pivirt-agent.prerm
+    contents:
+      - src: packaging/systemd/pivirt-agent.service
+        dst: /usr/lib/systemd/system/pivirt-agent.service
+      - src: packaging/etc/agent.conf
+        dst: /etc/pivirt/agent.conf
+        type: "config|noreplace"
+    overrides:
+      deb:
+        dependencies:
+          - libvirt-daemon
+          - libvirt-daemon-system
+          - openvswitch-switch
+        file_name_template: "{{ .ProjectName }}_{{ .Version }}.{{ .Os }}_{{ .Arch }}"
+      rpm:
+        dependencies:
+          - libvirt
+          - openvswitch
+        file_name_template: "{{ .ProjectName }}-{{ .Version }}-{{ .Os }}-{{ .Arch }}"
+
+changelog:
+  sort: asc
+  filters:
+    exclude:
+      - "^docs:"
+      - "^test:"

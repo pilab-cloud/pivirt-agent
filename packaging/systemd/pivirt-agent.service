@@ -1,0 +1,12 @@
+[Unit]
+Description=PiVirt Cloud Agent service
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/pivirt-agent
+Restart=on-failure
+User=root
+Group=root
+
+[Install]
+WantedBy=multi-user.target
