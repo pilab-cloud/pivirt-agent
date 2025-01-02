@@ -1,0 +1,10 @@
+#!/bin/bash
+set -e
+
+# Enable the service
+systemctl enable pivirt-agent.service
+
+# Start the service
+systemctl start pivirt-agent.service
+
+exit 0

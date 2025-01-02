@@ -1,0 +1,10 @@
+#!/bin/bash
+set -e
+
+# Stop the service
+systemctl stop pivirt-agent.service
+
+# Disable the service
+systemctl disable pivirt-agent.service
+
+exit 0

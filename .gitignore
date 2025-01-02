@@ -1,0 +1,8 @@
+# Ignore generated files
+dist/
+# Ignore temporary files
+agent.log
+.idea
+certs/*
+# repo.sh
+agent.conf
