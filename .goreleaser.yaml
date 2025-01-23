@@ -10,9 +10,6 @@ version: 2
 
 project_name: pivirt-agent
 
-env:
-  - GPG_PASSPHRASE=asd123
-
 before:
   hooks:
     # You may remove this if you don't use go modules.
@@ -25,6 +22,8 @@ builds:
       - CGO_ENABLED=0
     goos:
       - linux
+    goarch:
+      - amd64
 
 archives:
   - format: tar.gz
@@ -38,22 +37,9 @@ archives:
       {{- if .Arm }}v{{ .Arm }}{{ end }}
 signs:
   - artifacts: package  # Sign all .rpm artifacts
-    cmd: gpg
-    args: ["-u", "3ACD8FE8665185C4", "--detach-sign", "--armor", "${artifact}"]
-    output: true
-    signature: "${artifact}.asc"
+    # cmd: gpg
+    # args: ["-u", "3ACD8FE8665185C4", "--detach-sign", "${artifact}"]
     
-#    args:
-#      - --batch
-#      - --yes
-#      - --pinentry-mode
-#      - loopback
-#      - --passphrase
-#      - "{{ .Env.GPG_PASSPHRASE }}"
-#      - --detach-sign
-#      - --armor
-#      - --output={{ .Artifact.Path }}.asc
-#      - "{{ .Artifact.Path }}"
 nfpms:
   - formats:
       - deb
@@ -72,6 +58,8 @@ nfpms:
       - src: packaging/etc/agent.conf
         dst: /etc/pivirt/agent.conf
         type: "config|noreplace"
+      - src: packaging/etc/ca.pem
+        dst: /etc/pivirt/ca.pem
     overrides:
       deb:
         dependencies:

@@ -6,3 +6,4 @@ agent.log
 certs/*
 # repo.sh
 agent.conf
+*.sh
