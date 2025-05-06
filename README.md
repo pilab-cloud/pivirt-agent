@@ -95,19 +95,6 @@ The agent logs to `/var/log/pivirt-agent.log`. You can adjust the logging level 
 
 All Rights Reserved to the _Progressive Innovation LAB_.
 
----
-
-<p align="center">
-Sponsored with ❤️ by
-</p>
-<p align="center">
-    <a href="https://newpush.com" target="_blank">
-    <img src="https://www.newpush.com/images/np_logo_blue_SVG.svg" width="128"/>
-    </a><br>
-    We focus on reliability, quality, and value.
-</p>
-
----
 
 <p style="padding-top: 2rem;" align="center">
 Pioneering the future, together</p>
