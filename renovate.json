@@ -7,33 +7,9 @@
       "groupName": "Update pibase dependency",
       "schedule": ["every 3 days"],
       "enabled": true,
-      "separateMinorPatch": false,
-      "separateMajor": true,
+      "separateMajorMinor": false,
       "pin": false,
-      "rangeStrategy": "update-lockfile",
-      "postUpdate": {
-        "commands": ["go mod tidy", "go mod vendor"]
-      },
-      "matchPaths": ["go.mod"]
+      "rangeStrategy": "update-lockfile"
     }
-  ],
-  "repoSpecific": {
-    "pilab-cloud/director": {
-      "packageRules": [
-        {
-          "matchPackageNames": ["github.com/pilab-cloud/pibase"],
-          "groupName": "Update pibase from upstream",
-          "schedule": ["every 3 days"],
-          "enabled": true,
-          "separateMinorPatch": false,
-          "separateMajor": true,
-          "pin": false,
-          "rangeStrategy": "update-lockfile",
-          "postUpdate": {
-            "commands": ["go mod tidy", "go mod vendor"]
-          }
-        }
-      ]
-    }
-  }
+  ]
 }
