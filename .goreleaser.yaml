@@ -24,9 +24,11 @@ builds:
       - linux
     goarch:
       - amd64
+      - arm64
+      - "386"
 
 archives:
-  - format: tar.gz
+  - formats: ["tar.gz"]
     # this name template makes the OS and Arch compatible with the results of `uname`.
     name_template: >-
       {{ .ProjectName }}_
@@ -36,14 +38,39 @@ archives:
       {{- else }}{{ .Arch }}{{ end }}
       {{- if .Arm }}v{{ .Arm }}{{ end }}
 signs:
-  - artifacts: package  # Sign all .rpm artifacts
-    # cmd: gpg
-    # args: ["-u", "3ACD8FE8665185C4", "--detach-sign", "${artifact}"]
-    
+  - id: sign-rpm
+    artifacts: package # Sign all .rpm artifacts
+    cmd: gpg
+    args:
+      - "-u"
+      - "3ACD8FE8665185C4"
+      - "--detach-sign"
+      - "--armor"
+      - "--pinentry-mode"
+      - "loopback"
+      - "--passphrase"
+      - "${{ secrets.GPG_PASSPHRASE }}"
+      - "${artifact}"
+    output: true
+    signature: "${artifact}.asc"
+  - id: checksum
+    artifacts: checksum
+    args:
+      [
+        "--batch",
+        "-u",
+        "{{ .Env.GPG_FINGERPRINT }}",
+        "--output",
+        "${signature}",
+        "--detach-sign",
+        "${artifact}",
+      ]
+
 nfpms:
   - formats:
       - deb
       - rpm
+      - archlinux
     vendor: Progressive Innovation LAB
     maintainer: Paal Gyula <gyula@pilab.hu>
     description: Cloud Agent and RPC server for PiVirt virtualization platform.
