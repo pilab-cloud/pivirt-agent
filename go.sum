@@ -184,6 +184,8 @@ go.pilab.hu/cloud/hypervisor v0.0.0-20250504095257-c5ab05f7df57 h1:sv93Vr+yj+DRf
 go.pilab.hu/cloud/hypervisor v0.0.0-20250504095257-c5ab05f7df57/go.mod h1:Tq0NDT2MtBxW0Ds8UhRaowXxhDgt8WZqK0UnH6aesyw=
 go.pilab.hu/cloud/pibase v0.0.0-20250504115002-e0711ed5368d h1:Yqm5yxOHavz4jLYSuRgtjLUsVU1TwSJeAT4QB68xG8s=
 go.pilab.hu/cloud/pibase v0.0.0-20250504115002-e0711ed5368d/go.mod h1:7uulsMpSGHP6f7tNToromuhcXU+d2ShALBHHQgRnR04=
+go.pilab.hu/cloud/pibase v0.0.0-20250506093110-027ff9a89884 h1:u33fSWQfyPWao3RQt7qmnE8GNfvcAVAJXPh+YMObmr8=
+go.pilab.hu/cloud/pibase v0.0.0-20250506093110-027ff9a89884/go.mod h1:7uulsMpSGHP6f7tNToromuhcXU+d2ShALBHHQgRnR04=
 go.pilab.hu/cloud/virtpb v0.0.0-20250504100316-67a25b69257c h1:nT0o+YfYqKQsixgb7RY2+UPetH+7O2xb8J71LqlyYtY=
 go.pilab.hu/cloud/virtpb v0.0.0-20250504100316-67a25b69257c/go.mod h1:IYIiqt35Y5Y8QJD21Y9gUX7YNIqnPzKHxM5WZ4tmyv0=
 go.uber.org/goleak v1.3.0 h1:2K3zAYmnTNqV73imy9J1T3WC+gmCePx2hEGkimedGto=
