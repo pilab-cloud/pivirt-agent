@@ -1,14 +1,22 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": ["config:base"],
+  "extends": [
+    "config:recommended"
+  ],
   "packageRules": [
     {
-      "matchPackageNames": ["github.com/pilab-cloud/pibase"],
+      "matchPackageNames": [
+        "github.com/pilab-cloud/pibase"
+      ],
       "groupName": "Update pibase dependency",
-      "schedule": ["every 3 days"],
+      "schedule": [
+        "every 3 day"
+      ],
       "enabled": true,
       "separateMajorMinor": false,
-      "pin": false,
+      "pin": {
+        "enabled": false
+      },
       "rangeStrategy": "update-lockfile"
     }
   ]
