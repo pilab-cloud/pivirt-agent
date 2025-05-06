@@ -1,0 +1,39 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": ["config:base"],
+  "packageRules": [
+    {
+      "matchPackageNames": ["github.com/pilab-cloud/pibase"],
+      "groupName": "Update pibase dependency",
+      "schedule": ["every 3 days"],
+      "enabled": true,
+      "separateMinorPatch": false,
+      "separateMajor": true,
+      "pin": false,
+      "rangeStrategy": "update-lockfile",
+      "postUpdate": {
+        "commands": ["go mod tidy", "go mod vendor"]
+      },
+      "matchPaths": ["go.mod"]
+    }
+  ],
+  "repoSpecific": {
+    "pilab-cloud/director": {
+      "packageRules": [
+        {
+          "matchPackageNames": ["github.com/pilab-cloud/pibase"],
+          "groupName": "Update pibase from upstream",
+          "schedule": ["every 3 days"],
+          "enabled": true,
+          "separateMinorPatch": false,
+          "separateMajor": true,
+          "pin": false,
+          "rangeStrategy": "update-lockfile",
+          "postUpdate": {
+            "commands": ["go mod tidy", "go mod vendor"]
+          }
+        }
+      ]
+    }
+  }
+}
