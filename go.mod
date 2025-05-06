@@ -2,7 +2,7 @@ module go.pilab.hu/cloud/agent
 
 go 1.23.4
 
-require go.pilab.hu/cloud/pibase v0.0.0-20250504115002-e0711ed5368d
+require go.pilab.hu/cloud/pibase v0.0.0-20250506093110-027ff9a89884
 
 require (
 	github.com/apapsch/go-jsonmerge/v2 v2.0.0 // indirect
