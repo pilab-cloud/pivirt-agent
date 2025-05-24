@@ -186,6 +186,8 @@ go.pilab.hu/cloud/pibase v0.0.0-20250504115002-e0711ed5368d h1:Yqm5yxOHavz4jLYSu
 go.pilab.hu/cloud/pibase v0.0.0-20250504115002-e0711ed5368d/go.mod h1:7uulsMpSGHP6f7tNToromuhcXU+d2ShALBHHQgRnR04=
 go.pilab.hu/cloud/pibase v0.0.0-20250506093110-027ff9a89884 h1:u33fSWQfyPWao3RQt7qmnE8GNfvcAVAJXPh+YMObmr8=
 go.pilab.hu/cloud/pibase v0.0.0-20250506093110-027ff9a89884/go.mod h1:7uulsMpSGHP6f7tNToromuhcXU+d2ShALBHHQgRnR04=
+go.pilab.hu/cloud/pibase v0.0.0-20250524013154-1e5a6b77a37c h1:QccHfpI/Lbs9AkqqapjxG1a+S1Oedg2/GTgZW8vlF0w=
+go.pilab.hu/cloud/pibase v0.0.0-20250524013154-1e5a6b77a37c/go.mod h1:/QGVDqEtrqKthY6+Q71Ylk6z5s8R6jkYjlU1qB/2Abg=
 go.pilab.hu/cloud/virtpb v0.0.0-20250504100316-67a25b69257c h1:nT0o+YfYqKQsixgb7RY2+UPetH+7O2xb8J71LqlyYtY=
 go.pilab.hu/cloud/virtpb v0.0.0-20250504100316-67a25b69257c/go.mod h1:IYIiqt35Y5Y8QJD21Y9gUX7YNIqnPzKHxM5WZ4tmyv0=
 go.uber.org/goleak v1.3.0 h1:2K3zAYmnTNqV73imy9J1T3WC+gmCePx2hEGkimedGto=
@@ -218,6 +220,8 @@ google.golang.org/genproto/googleapis/rpc v0.0.0-20250505200425-f936aa4a68b2 h1:
 google.golang.org/genproto/googleapis/rpc v0.0.0-20250505200425-f936aa4a68b2/go.mod h1:qQ0YXyHHx3XkvlzUtpXDkS29lDSafHMZBAZDc03LQ3A=
 google.golang.org/grpc v1.72.0 h1:S7UkcVa60b5AAQTaO6ZKamFp1zMZSU0fGDK2WZLbBnM=
 google.golang.org/grpc v1.72.0/go.mod h1:wH5Aktxcg25y1I3w7H69nHfXdOG3UiadoBtjh3izSDM=
+google.golang.org/grpc v1.72.1 h1:HR03wO6eyZ7lknl75XlxABNVLLFc2PAb6mHlYh756mA=
+google.golang.org/grpc v1.72.1/go.mod h1:wH5Aktxcg25y1I3w7H69nHfXdOG3UiadoBtjh3izSDM=
 google.golang.org/protobuf v1.36.6 h1:z1NpPI8ku2WgiWnf+t9wTPsn6eP1L7ksHUlkfLvd9xY=
 google.golang.org/protobuf v1.36.6/go.mod h1:jduwjTPXsFjZGTmRluh+L6NjiWu7pchiJ2/5YcXBHnY=
 gopkg.in/check.v1 v0.0.0-20161208181325-20d25e280405/go.mod h1:Co6ibVJAznAaIkqp8huTwlJQCZ016jof/cbN4VW5Yz0=
