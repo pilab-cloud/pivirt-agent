@@ -20,5 +20,10 @@
       },
       "rangeStrategy": "update-lockfile"
     }
-  ]
+  ],
+  "customEnvVariables": {
+    "GOPRIVATE": "go.pilab.hu/",
+    "GONOSUMDB": "go.pilab.hu/",
+    "GONOPROXY": "go.pilab.hu/"
+  }
 }
