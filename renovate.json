@@ -1,17 +1,18 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": [
-    "config:recommended"
+  "extends": ["config:recommended"],
+  "repositories": [
+    "pilab-cloud/hypervisor",
+    "pilab-cloud/pibase",
+    "pilab-cloud/director",
+    "pilab-cloud/hades",
+    "pilab-cloud/pivirt-agent"
   ],
   "packageRules": [
     {
-      "matchPackageNames": [
-        "github.com/pilab-cloud/pibase"
-      ],
+      "matchPackageNames": ["github.com/pilab-cloud/pibase"],
       "groupName": "Update pibase dependency",
-      "schedule": [
-        "every 3 day"
-      ],
+      "schedule": ["every 3 day"],
       "enabled": true,
       "separateMajorMinor": false,
       "pin": {
