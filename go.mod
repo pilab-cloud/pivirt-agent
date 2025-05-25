@@ -2,7 +2,7 @@ module go.pilab.hu/cloud/agent
 
 go 1.23.4
 
-require go.pilab.hu/cloud/pibase v0.0.0-20250524013154-1e5a6b77a37c
+require go.pilab.hu/cloud/pibase v0.0.0-20250525140743-8f1331c1b811
 
 require (
 	github.com/apapsch/go-jsonmerge/v2 v2.0.0 // indirect
@@ -69,7 +69,7 @@ require (
 	go.opentelemetry.io/otel/sdk v1.35.0 // indirect
 	go.opentelemetry.io/otel/trace v1.35.0 // indirect
 	go.opentelemetry.io/proto/otlp v1.6.0 // indirect
-	go.pilab.hu/cloud/hades v0.0.0-20250504095959-2cc31decab29 // indirect
+	go.pilab.hu/cloud/hades v0.0.0-20250506111438-23f0f10a8f2c // indirect
 	go.pilab.hu/cloud/hypervisor v0.0.0-20250504095257-c5ab05f7df57 // indirect
 	go.pilab.hu/cloud/virtpb v0.0.0-20250504100316-67a25b69257c // indirect
 	go.uber.org/multierr v1.11.0 // indirect

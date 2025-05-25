@@ -180,6 +180,8 @@ go.opentelemetry.io/proto/otlp v1.6.0 h1:jQjP+AQyTf+Fe7OKj/MfkDrmK4MNVtw2NpXsf9f
 go.opentelemetry.io/proto/otlp v1.6.0/go.mod h1:cicgGehlFuNdgZkcALOCh3VE6K/u2tAjzlRhDwmVpZc=
 go.pilab.hu/cloud/hades v0.0.0-20250504095959-2cc31decab29 h1:YYk6X1HZR22QhrxPBL0aRIrlZriI8WoID0s9j7HQmhI=
 go.pilab.hu/cloud/hades v0.0.0-20250504095959-2cc31decab29/go.mod h1:zla94/wKoQ098xgqeQT7UD/bRf5jTWanHILi5HtvQmQ=
+go.pilab.hu/cloud/hades v0.0.0-20250506111438-23f0f10a8f2c h1:dP0+ANZUZnOJzOFzjNnqLoXN9q0L8ANX4ZJnlv945D8=
+go.pilab.hu/cloud/hades v0.0.0-20250506111438-23f0f10a8f2c/go.mod h1:zla94/wKoQ098xgqeQT7UD/bRf5jTWanHILi5HtvQmQ=
 go.pilab.hu/cloud/hypervisor v0.0.0-20250504095257-c5ab05f7df57 h1:sv93Vr+yj+DRfy89W7gg8AE6hd4iqS/4Wn6opGIIWq0=
 go.pilab.hu/cloud/hypervisor v0.0.0-20250504095257-c5ab05f7df57/go.mod h1:Tq0NDT2MtBxW0Ds8UhRaowXxhDgt8WZqK0UnH6aesyw=
 go.pilab.hu/cloud/pibase v0.0.0-20250504115002-e0711ed5368d h1:Yqm5yxOHavz4jLYSuRgtjLUsVU1TwSJeAT4QB68xG8s=
@@ -188,6 +190,8 @@ go.pilab.hu/cloud/pibase v0.0.0-20250506093110-027ff9a89884 h1:u33fSWQfyPWao3RQt
 go.pilab.hu/cloud/pibase v0.0.0-20250506093110-027ff9a89884/go.mod h1:7uulsMpSGHP6f7tNToromuhcXU+d2ShALBHHQgRnR04=
 go.pilab.hu/cloud/pibase v0.0.0-20250524013154-1e5a6b77a37c h1:QccHfpI/Lbs9AkqqapjxG1a+S1Oedg2/GTgZW8vlF0w=
 go.pilab.hu/cloud/pibase v0.0.0-20250524013154-1e5a6b77a37c/go.mod h1:/QGVDqEtrqKthY6+Q71Ylk6z5s8R6jkYjlU1qB/2Abg=
+go.pilab.hu/cloud/pibase v0.0.0-20250525140743-8f1331c1b811 h1:Ldh/Lw1xHS9FrjuqIUPyJITYMVY6p5vRSxLNwfvKwCQ=
+go.pilab.hu/cloud/pibase v0.0.0-20250525140743-8f1331c1b811/go.mod h1:dARmhlsHu4sxNq4bBPy3rVTqjdfEGL/XYynMgfRuLGA=
 go.pilab.hu/cloud/virtpb v0.0.0-20250504100316-67a25b69257c h1:nT0o+YfYqKQsixgb7RY2+UPetH+7O2xb8J71LqlyYtY=
 go.pilab.hu/cloud/virtpb v0.0.0-20250504100316-67a25b69257c/go.mod h1:IYIiqt35Y5Y8QJD21Y9gUX7YNIqnPzKHxM5WZ4tmyv0=
 go.uber.org/goleak v1.3.0 h1:2K3zAYmnTNqV73imy9J1T3WC+gmCePx2hEGkimedGto=
