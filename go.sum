@@ -112,6 +112,8 @@ github.com/minio/minio-go/v7 v7.0.91 h1:tWLZnEfo3OZl5PoXQwcwTAPNNrjyWwOh6cbZitW5
 github.com/minio/minio-go/v7 v7.0.91/go.mod h1:uvMUcGrpgeSAAI6+sD3818508nUyMULw94j2Nxku/Go=
 github.com/minio/minio-go/v7 v7.0.92 h1:jpBFWyRS3p8P/9tsRc+NuvqoFi7qAmTCFPoRFmobbVw=
 github.com/minio/minio-go/v7 v7.0.92/go.mod h1:vTIc8DNcnAZIhyFsk8EB90AbPjj3j68aWIEQCiPj7d0=
+github.com/minio/minio-go/v7 v7.0.93 h1:lAB4QJp8Nq3vDMOU0eKgMuyBiEGMNlXQ5Glc8qAxqSU=
+github.com/minio/minio-go/v7 v7.0.93/go.mod h1:71t2CqDt3ThzESgZUlU1rBN54mksGGlkLcFgguDnnAc=
 github.com/modern-go/concurrent v0.0.0-20180228061459-e0a39a4cb421/go.mod h1:6dJC0mAP4ikYIbvyc7fijjWJddQyLn8Ig3JB5CqoB9Q=
 github.com/modern-go/concurrent v0.0.0-20180306012644-bacd9c7ef1dd h1:TRLaZ9cD/w8PVh93nsPXa1VrQ6jlwL5oN8l14QlcNfg=
 github.com/modern-go/concurrent v0.0.0-20180306012644-bacd9c7ef1dd/go.mod h1:6dJC0mAP4ikYIbvyc7fijjWJddQyLn8Ig3JB5CqoB9Q=
@@ -216,6 +218,8 @@ go.pilab.hu/cloud/hades v0.0.0-20250506111438-23f0f10a8f2c h1:dP0+ANZUZnOJzOFzjN
 go.pilab.hu/cloud/hades v0.0.0-20250506111438-23f0f10a8f2c/go.mod h1:zla94/wKoQ098xgqeQT7UD/bRf5jTWanHILi5HtvQmQ=
 go.pilab.hu/cloud/hypervisor v0.0.0-20250504095257-c5ab05f7df57 h1:sv93Vr+yj+DRfy89W7gg8AE6hd4iqS/4Wn6opGIIWq0=
 go.pilab.hu/cloud/hypervisor v0.0.0-20250504095257-c5ab05f7df57/go.mod h1:Tq0NDT2MtBxW0Ds8UhRaowXxhDgt8WZqK0UnH6aesyw=
+go.pilab.hu/cloud/hypervisor v0.0.0-20250524031139-223c12fde9b2 h1:eNZSV28T9fKEukBGA8zO9FDl436RVwcxyMcNWsv6NWE=
+go.pilab.hu/cloud/hypervisor v0.0.0-20250524031139-223c12fde9b2/go.mod h1:PE1JeCLm6Fhynr25pHoFoNJXchRCpvRRbYCSs9QG8pg=
 go.pilab.hu/cloud/pibase v0.0.0-20250504115002-e0711ed5368d h1:Yqm5yxOHavz4jLYSuRgtjLUsVU1TwSJeAT4QB68xG8s=
 go.pilab.hu/cloud/pibase v0.0.0-20250504115002-e0711ed5368d/go.mod h1:7uulsMpSGHP6f7tNToromuhcXU+d2ShALBHHQgRnR04=
 go.pilab.hu/cloud/pibase v0.0.0-20250506093110-027ff9a89884 h1:u33fSWQfyPWao3RQt7qmnE8GNfvcAVAJXPh+YMObmr8=
@@ -224,6 +228,8 @@ go.pilab.hu/cloud/pibase v0.0.0-20250524013154-1e5a6b77a37c h1:QccHfpI/Lbs9Akqqa
 go.pilab.hu/cloud/pibase v0.0.0-20250524013154-1e5a6b77a37c/go.mod h1:/QGVDqEtrqKthY6+Q71Ylk6z5s8R6jkYjlU1qB/2Abg=
 go.pilab.hu/cloud/pibase v0.0.13 h1:rHrWheD13vRdx4YVLswc5C1hyytz8m5JD4WUZOaQTYg=
 go.pilab.hu/cloud/pibase v0.0.13/go.mod h1:9GjCN0qX0Jom9mt4HAqFlwUCcItrXZdZK4x6/akrklo=
+go.pilab.hu/cloud/pibase v0.0.18 h1:N0A0JRAHv4vKLVL6vFfe/UOkrALSeJOGK7jbUJ7RNNU=
+go.pilab.hu/cloud/pibase v0.0.18/go.mod h1:nv5aYwm3/do/iHf0VfU/gadUtPh0Wpbmmq5X3PlNEmU=
 go.pilab.hu/cloud/virtpb v0.0.0-20250504100316-67a25b69257c h1:nT0o+YfYqKQsixgb7RY2+UPetH+7O2xb8J71LqlyYtY=
 go.pilab.hu/cloud/virtpb v0.0.0-20250504100316-67a25b69257c/go.mod h1:IYIiqt35Y5Y8QJD21Y9gUX7YNIqnPzKHxM5WZ4tmyv0=
 go.pilab.hu/cloud/virtpb v1.0.0 h1:tInkaTh194+DiqlBoM0scQUeg4kdJH0rihHi0VGd1sk=
@@ -270,6 +276,8 @@ google.golang.org/grpc v1.72.1 h1:HR03wO6eyZ7lknl75XlxABNVLLFc2PAb6mHlYh756mA=
 google.golang.org/grpc v1.72.1/go.mod h1:wH5Aktxcg25y1I3w7H69nHfXdOG3UiadoBtjh3izSDM=
 google.golang.org/grpc v1.72.2 h1:TdbGzwb82ty4OusHWepvFWGLgIbNo1/SUynEN0ssqv8=
 google.golang.org/grpc v1.72.2/go.mod h1:wH5Aktxcg25y1I3w7H69nHfXdOG3UiadoBtjh3izSDM=
+google.golang.org/grpc v1.73.0 h1:VIWSmpI2MegBtTuFt5/JWy2oXxtjJ/e89Z70ImfD2ok=
+google.golang.org/grpc v1.73.0/go.mod h1:50sbHOUqWoCQGI8V2HQLJM0B+LMlIUjNSZmow7EVBQc=
 google.golang.org/protobuf v1.36.6 h1:z1NpPI8ku2WgiWnf+t9wTPsn6eP1L7ksHUlkfLvd9xY=
 google.golang.org/protobuf v1.36.6/go.mod h1:jduwjTPXsFjZGTmRluh+L6NjiWu7pchiJ2/5YcXBHnY=
 gopkg.in/check.v1 v0.0.0-20161208181325-20d25e280405/go.mod h1:Co6ibVJAznAaIkqp8huTwlJQCZ016jof/cbN4VW5Yz0=

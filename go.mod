@@ -2,7 +2,7 @@ module go.pilab.hu/cloud/agent
 
 go 1.23.4
 
-require go.pilab.hu/cloud/pibase v0.0.13
+require go.pilab.hu/cloud/pibase v0.0.18
 
 require (
 	github.com/apapsch/go-jsonmerge/v2 v2.0.0 // indirect
@@ -40,7 +40,7 @@ require (
 	github.com/mattn/go-isatty v0.0.20 // indirect
 	github.com/minio/crc64nvme v1.0.2 // indirect
 	github.com/minio/md5-simd v1.1.2 // indirect
-	github.com/minio/minio-go/v7 v7.0.92 // indirect
+	github.com/minio/minio-go/v7 v7.0.93 // indirect
 	github.com/modern-go/concurrent v0.0.0-20180306012644-bacd9c7ef1dd // indirect
 	github.com/modern-go/reflect2 v1.0.2 // indirect
 	github.com/oapi-codegen/runtime v1.1.1 // indirect
@@ -73,7 +73,7 @@ require (
 	go.opentelemetry.io/otel/trace v1.36.0 // indirect
 	go.opentelemetry.io/proto/otlp v1.6.0 // indirect
 	go.pilab.hu/cloud/hades v0.0.0-20250506111438-23f0f10a8f2c // indirect
-	go.pilab.hu/cloud/hypervisor v0.0.0-20250504095257-c5ab05f7df57 // indirect
+	go.pilab.hu/cloud/hypervisor v0.0.0-20250524031139-223c12fde9b2 // indirect
 	go.pilab.hu/cloud/virtpb v1.0.0 // indirect
 	go.uber.org/multierr v1.11.0 // indirect
 	golang.org/x/arch v0.17.0 // indirect
@@ -83,7 +83,7 @@ require (
 	golang.org/x/text v0.26.0 // indirect
 	google.golang.org/genproto/googleapis/api v0.0.0-20250519155744-55703ea1f237 // indirect
 	google.golang.org/genproto/googleapis/rpc v0.0.0-20250519155744-55703ea1f237 // indirect
-	google.golang.org/grpc v1.72.2 // indirect
+	google.golang.org/grpc v1.73.0 // indirect
 	google.golang.org/protobuf v1.36.6 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 	libvirt.org/go/libvirt v1.11002.0 // indirect
