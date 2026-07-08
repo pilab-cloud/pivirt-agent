@@ -2,7 +2,7 @@ module go.pilab.hu/cloud/agent
 
 go 1.24.0
 
-toolchain go1.25.6
+toolchain go1.26.5
 
 require go.pilab.hu/cloud/pibase v0.0.31
 
