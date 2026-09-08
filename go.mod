@@ -4,7 +4,7 @@ go 1.24.0
 
 toolchain go1.25.6
 
-require go.pilab.hu/cloud/pibase v0.0.31
+require go.pilab.hu/cloud/pibase v0.0.77
 
 require (
 	connectrpc.com/connect v1.18.1 // indirect
