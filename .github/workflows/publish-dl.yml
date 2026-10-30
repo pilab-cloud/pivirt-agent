@@ -1,0 +1,29 @@
+name: publish-dl
+
+# Publish an existing release to https://dl.pilab.hu by hand.
+# Actions -> publish-dl -> Run workflow.
+#
+# The normal path is the publish job in the release workflow (it fires on
+# every v* tag); this button is for releases made before that job existed, or
+# for re-publishing after a problem on the builder.
+
+on:
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: 'Release tag to publish'
+        type: string
+        required: true
+      tier:
+        description: 'Target tier: testing or stable'
+        type: string
+        default: testing
+
+jobs:
+  publish:
+    uses: pilab-dev/release-toolchain/.github/workflows/sync-dl.yml@v1
+    with:
+      source: release
+      tag: ${{ inputs.tag }}
+      tier: ${{ inputs.tier }}
+    secrets: inherit
