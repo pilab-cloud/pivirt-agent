@@ -89,7 +89,6 @@ require (
 	go.opentelemetry.io/otel/sdk v1.37.0 // indirect
 	go.opentelemetry.io/otel/trace v1.37.0 // indirect
 	go.opentelemetry.io/proto/otlp v1.7.1 // indirect
-	go.pilab.hu/cloud/hades v0.0.0-20250506111438-23f0f10a8f2c // indirect
 	go.pilab.hu/cloud/hypervisor v0.0.0-20250524031139-223c12fde9b2 // indirect
 	go.pilab.hu/cloud/virtpb v1.0.0 // indirect
 	go.uber.org/multierr v1.11.0 // indirect
