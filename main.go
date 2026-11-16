@@ -1,7 +1,7 @@
 package main
 
 import (
-	"go.pilab.hu/cloud/pibase/apps/agent"
+	"go.pilab.hu/cloud/pibase/v3/apps/agent"
 )
 
 func main() {
